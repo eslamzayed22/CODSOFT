@@ -62,7 +62,7 @@ button {
     border-radius: 30% !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1520px) {
     .keys {
         width: 80%;
     }
