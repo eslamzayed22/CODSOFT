@@ -202,4 +202,7 @@ a {
     background-color: var(--main-color);
     color: white;
 }
+.img-card {
+    height: 410px;
+}
 /* end contact */
