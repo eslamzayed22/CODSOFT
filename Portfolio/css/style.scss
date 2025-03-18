@@ -1,0 +1,208 @@
+/* global style */
+:root {
+    --main-color:#754EF9;
+    --second-color: #333;
+    --main-font: "Oswald"; 
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-padding-top: 63px;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+section {
+    margin: 50px 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.cr {
+    cursor: pointer;
+}
+.main-btn {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 22px;
+    box-shadow: 13px 12px 11px 0px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.main-color{
+    color: var(--main-color);
+}
+/* Start Nav */
+.logo-font {
+    color: var(--main-color);
+    font-size: 25px;
+    font-family: "Edu QLD Beginner", cursive;
+}
+.navbar ul a {
+    font-size: 20px;
+    margin-right: 20px;
+    color: black;
+}
+/* end navbar */
+/* start home  */
+#home .content {
+    position: absolute;
+    top: 30%;
+}
+#home .content  .frontend-text::after  {
+    content: "|";
+    height: 50px;
+    width: 2px;
+    animation: Typing 8s infinite;
+}
+@keyframes Typing {
+    0% { content: 'F|'; }
+    2% { content: 'Fr|'; }
+    4% { content: 'Fro|'; }
+    6% { content: 'Fron|'; }
+    8% { content: 'Front|'; }
+    10% { content: 'Front |'; }
+    12% { content: 'Front E|'; }
+    14% { content: 'Front En|'; }
+    16% { content: 'Front End|'; }
+    18% { content: 'Front End D|'; }
+    20% { content: 'Front End De|'; }
+    22% { content: 'Front End Dev|'; }
+    24% { content: 'Front End Deve|'; }
+    26% { content: 'Front End Devel|'; }
+    28% { content: 'Front End Develop|'; }
+    30% { content: 'Front End Develope|'; }
+    32% { content: 'Front End Developer|'; }
+    34% { content: 'Front End Develope|'; }
+    36% { content: 'Front End Develop|'; }
+    38% { content: 'Front End Devel|'; }
+    40% { content: 'Front End Deve|'; }
+    42% { content: 'Front End Dev|'; }
+    44% { content: 'Front End D|'; }
+    46% { content: 'Front End|'; }
+    48% { content: 'Front E|'; }
+    50% { content: 'Front|'; }
+    52% { content: 'Fron|'; }
+    54% { content: 'Fro|'; }
+    56% { content: 'Fr|'; }
+    58% { content: 'F|'; }
+}
+
+#home .lead {
+    width: 40% ;
+}
+#home .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .prof-img::after {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 90%;
+    background-color: var(--main-color);
+    box-shadow: 4px 34px 21px 2px rgba(0, 0, 0, 0.2);
+    left: 2.5px;
+    bottom: -13px;
+    z-index: -1;
+    border-radius: 50%;
+}
+@media (max-width: 640px) {
+    #home .row {
+        flex-direction: column-reverse;
+    }
+    #home .content {
+        position: unset;
+    }
+    #home .lead {
+        width: 100%;
+    }
+}
+/* end home  */
+/* start skills */
+#skills .fa-bolt {
+    color: var(--main-color);
+}
+/* end skills */
+/* start proficiency  */
+#proficiency .progress-bar {
+    background-color: var(--main-color);
+}
+#proficiency .profimg {
+    width: 70%;
+}
+@media (max-width: 640px) {
+    #proficiency .profimg {
+        margin: auto;
+    }
+}
+/* end proficiency  */
+/* start OpenSource  */
+#projects .project {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#projects .project {
+    transition: all 0.7s;
+}
+#projects .project:hover {
+    box-shadow: 0 0 10px var(--main-color);
+}
+#projects .links {
+    transform: translateY(125%);
+    transition: all .7s;
+}
+#projects .project:hover .links {
+    transform: translateY(-20%);
+}
+@media (max-width: 640px) {
+    
+}
+/* end projects  */
+/* start certification  */
+#certification  .card-img-top {
+    height: 400px;
+}
+#certification .card {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    border: 0;
+}
+#certification .scale:hover .card {
+    transform: scale(1.06);
+/* start contact */
+}
+/* end certification  */
+/* start contact */
+.contact .item .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+.contact .item .icon:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.img-card {
+    height: 410px;
+}
+/* end contact */
